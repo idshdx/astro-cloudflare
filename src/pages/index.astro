@@ -1,0 +1,33 @@
+import Layout from '../layouts/Layout.astro';
+
+export const prerender = true;
+
+export default function Index() {
+  return (
+    <Layout>
+      <div class="main">
+        <div class="main__logo-container">
+          <a href="index.html" class="main__logo-link">
+            <picture>
+              <source srcSet="/images/desk2.webp" type="image/webp" />
+              <img src="/images/desk2.gif" alt="landing-logo" class="main__logo-image" />
+            </picture>
+          </a>
+        </div>
+        <div class="content">
+          <div className="content__intro">
+            <h1 className="content__title">straja is a group of friends who work as programmers and hackers in Romania.</h1>
+            <h4 className="content__subtitle">straja developers do web programming, realtime magic, network deep dives, mostly on linux and with open-source software.</h4>
+            <h4 className="content__subtitle">We do what others talk about.</h4>
+          </div>
+          <div className="content__contact">
+            <p>For enquiries write to us at
+              <a href="mailto:contact@straja.org" className="content__link">contact@straja.org</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <script src="/sparkle.js"></script>
+    </Layout>
+  );
+}
