@@ -11,7 +11,5 @@
   "dependencies": {
     "astro": "^5.0.0"
   },
-  "devDependencies": {
-    "@astrojs/cloudflare": "^14.0.0"
-  }
+  "devDependencies": {}
 }
